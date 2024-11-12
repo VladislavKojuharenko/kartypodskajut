@@ -1,0 +1,136 @@
+body{
+  background-color: var(--bg-color);
+}
+.content-section {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  background-color: var(--bg-color);
+}
+.content__title {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 30px;
+  margin-top: 7vw;
+  margin-bottom: 2.5vw;
+  background-color: var(--bg-color);
+}
+.content__text-block {
+  color: var(--text-color);
+  font-size: 18px;
+  background-color: var(--bg-color);
+  
+}
+.content__paragraph {
+  background-color: var(--accent-color);
+  font-size: 1.5em;
+  
+}
+.content__blockquote {
+  width: 75%;
+  
+}
+.span_padding {
+  padding-top: clamp(1.125rem, 0.161rem + 4.82vw, 4.5rem);
+}
+h3 + .content__paragraph {
+  padding-right: clamp(1.125rem, 0.161rem + 4.82vw, 4.5rem);
+}
+.syllka_app {
+  color: var(--text-color);
+}
+.content_padding {
+  margin-top: 1.35em;
+  padding-bottom: 1.35em;
+}
+.content_padding_texttitati {
+  margin-top: 1.35em;
+  margin-bottom: 1.35em;
+}
+.content__blockquote {
+  text-align: left;
+  padding-bottom: 1.5rem;
+  font-style: italic;
+  width: 75%;
+  height: auto;
+  margin: auto;
+  font-size: 18px;
+  padding-left: 6rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.content__list {
+  list-style-type: none;
+  background-color: var(--bg-color);
+  
+}
+.main_ul{
+  padding-bottom: 10vh;
+}
+
+.content__list::before {
+  content: url(/karty-podskazhut-main/images/marker-light.svg);
+  color: var(--text-color);
+  width: 15px;
+  height: 15px;
+  inline-start: 40px;
+  background-color: var(--bg-color);
+}
+.content__figure {
+  position: relative;
+  width: calc(100% + 10vw);
+  right: 5vw;
+  margin: 7% auto;
+  background-color: var(--bg-color);
+}
+.content_picture {
+  width: 100%;
+  background-color: var(--bg-color);
+}
+.content__picture-caption {
+  text-align: center;
+  font-size: 18px;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--text-color);
+  font-size: 18px;
+  background-color: var(--bg-color);
+}
+.content__card {
+  aspect-ratio: 4/3;
+  border: 1px solid var(--text-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--bg-color);
+}
+.content__card-title {
+  text-align: center;
+  font-size: 60px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.content__card-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.colored-text {
+  position: relative;
+  z-index: 0;
+}
+.colored-text::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 45px;
+  height: 20px;
+  height: 0.2em;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--accent-color);
+}
